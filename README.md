@@ -1,4 +1,4 @@
-# ini - Simple INI Format Config Parse with Marsha and Unmarshal
+# ini - Simple INI Format Config Parse with Marshal and Unmarshal
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/go-zoox/ini)](https://pkg.go.dev/github.com/go-zoox/ini)
 [![Build Status](https://github.com/go-zoox/ini/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/go-zoox/ini/actions/workflows/ci.yml)
