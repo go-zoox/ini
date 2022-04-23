@@ -15,7 +15,7 @@ type datasource struct {
 	structure map[string]interface{}
 }
 
-func NewDataSource(data []byte) *datasource {
+func newDataSource(data []byte) *datasource {
 	return &datasource{
 		structure: make(map[string]interface{}),
 		bytes:     data,

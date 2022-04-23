@@ -7,7 +7,7 @@ import (
 )
 
 func TestUnmarshal(t *testing.T) {
-	ini_text := `app_name = go-zoox web
+	iniText := `app_name = go-zoox web
 
 # possible values: DEBUG, INFO, WARNING, ERROR, FATAL
 log_level = DEBUG
@@ -27,20 +27,20 @@ port = 6379`
 		AppName  string `ini:"app_name"`
 		LogLevel string `ini:"log_level"`
 		Mysql    struct {
-			Ip       string `ini:"ip"`
+			IP       string `ini:"ip"`
 			Port     int    `ini:"port"`
 			User     string `ini:"user"`
 			Password string `ini:"password"`
 			Database string `ini:"database"`
 		} `ini:"mysql"`
 		Redis struct {
-			Ip   string `ini:"ip"`
+			IP   string `ini:"ip"`
 			Port int    `ini:"port"`
 		} `ini:"redis"`
 	}
 
 	var config Config
-	if err := Unmarshal([]byte(ini_text), &config); err != nil {
+	if err := Unmarshal([]byte(iniText), &config); err != nil {
 		t.Error(err)
 	} else {
 		j, _ := json.MarshalIndent(config, "", "  ")
@@ -53,14 +53,14 @@ func TestMarshal(t *testing.T) {
 		AppName  string `ini:"app_name"`
 		LogLevel string `ini:"log_level"`
 		Mysql    struct {
-			Ip       string `ini:"ip"`
+			IP       string `ini:"ip"`
 			Port     int    `ini:"port"`
 			User     string `ini:"user"`
 			Password string `ini:"password"`
 			Database string `ini:"database"`
 		} `ini:"mysql"`
 		Redis struct {
-			Ip   string `ini:"ip"`
+			IP   string `ini:"ip"`
 			Port int    `ini:"port"`
 		} `ini:"redis"`
 	}
@@ -69,23 +69,23 @@ func TestMarshal(t *testing.T) {
 		AppName:  "go-zoox web",
 		LogLevel: "DEBUG",
 		Mysql: struct {
-			Ip       string `ini:"ip"`
+			IP       string `ini:"ip"`
 			Port     int    `ini:"port"`
 			User     string `ini:"user"`
 			Password string `ini:"password"`
 			Database string `ini:"database"`
 		}{
-			Ip:       "127.0.0.1",
+			IP:       "127.0.0.1",
 			Port:     3306,
 			User:     "zero",
 			Password: "123456",
 			Database: "go-zoox",
 		},
 		Redis: struct {
-			Ip   string `ini:"ip"`
+			IP   string `ini:"ip"`
 			Port int    `ini:"port"`
 		}{
-			Ip:   "127.0.0.1",
+			IP:   "127.0.0.1",
 			Port: 6379,
 		},
 	}

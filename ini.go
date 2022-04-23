@@ -9,6 +9,7 @@ import (
 	"github.com/go-zoox/tag"
 )
 
+// Marshal returns the ini data of the given struct pointer.
 func Marshal(v interface{}) ([]byte, error) {
 	// 1. any(struct / map) => json
 	jsonv, err := json.Marshal(v)
@@ -92,8 +93,9 @@ func Marshal(v interface{}) ([]byte, error) {
 	return []byte(strings.Join(lines, "\n")), nil
 }
 
+// Unmarshal parses the ini data and stores the result in the value pointed to by v.
 func Unmarshal(data []byte, v interface{}) error {
-	ds := NewDataSource(data)
+	ds := newDataSource(data)
 	if err := ds.Parse(); err != nil {
 		return err
 	}
