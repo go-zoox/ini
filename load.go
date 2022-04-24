@@ -3,6 +3,8 @@ package ini
 import (
 	"regexp"
 	"strings"
+
+	"github.com/go-zoox/core-utils/object"
 )
 
 var (
@@ -60,26 +62,5 @@ func (ds *datasource) Parse() error {
 }
 
 func (ds *datasource) Get(key string) interface{} {
-	if strings.Contains(key, ".") {
-		keys := strings.Split(key, ".")
-		keyLength := len(keys)
-		tmp := ds.structure
-		for index, k := range keys {
-			if v, ok := tmp[k]; ok {
-				if index == keyLength-1 {
-					return v
-				}
-
-				tmp = v.(map[string]interface{})
-			} else {
-				return nil
-			}
-		}
-	} else {
-		if v, ok := ds.structure[key]; ok {
-			return v
-		}
-	}
-
-	return nil
+	return object.Get(ds.structure, key)
 }

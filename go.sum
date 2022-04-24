@@ -1,6 +1,4 @@
-github.com/go-ini/ini v1.66.4 h1:dKjMqkcbkzfddhIhyglTPgMoJnkvmG+bSLrU9cTHc5M=
-github.com/go-ini/ini v1.66.4/go.mod h1:ByCAeIL28uOIIG0E3PJtZPDL8WnHpFKFOtgjp+3Ies8=
-github.com/go-zoox/tag v1.0.0 h1:HNO2bJrJfFHgrbGtghMCw+s5bKpxVKqo9elGa8dDoqg=
-github.com/go-zoox/tag v1.0.0/go.mod h1:TNFY+IN6FgsD0KGV6mrnuVXONUq7zpH01k53BcNsT8k=
-github.com/go-zoox/tag v1.0.2 h1:vmNRPftu2rN+SLkA/iMd8zImUIj6zIteAfxlO1PX9rg=
-github.com/go-zoox/tag v1.0.2/go.mod h1:TNFY+IN6FgsD0KGV6mrnuVXONUq7zpH01k53BcNsT8k=
+github.com/go-zoox/core-utils v1.0.1 h1:kErCUT+w5qZuaAAxP5HjLMS3lqJB+VGio8XCcXVOLFQ=
+github.com/go-zoox/core-utils v1.0.1/go.mod h1:EknM3KLL6/kagL95wZbWE7mRRcYCG/fHqiJ/EH0ihAs=
+github.com/go-zoox/tag v1.0.3 h1:S6+AXBKxP+ELzHvf6Mk3Q3tlhbwbYDMOpe3boC6Amo4=
+github.com/go-zoox/tag v1.0.3/go.mod h1:m0zKT1lvRK5v0st+oG6ttYrlCbCCLPKy7mcxIWfOB/0=
