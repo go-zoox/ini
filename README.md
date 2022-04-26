@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-zoox/ini)](https://goreportcard.com/report/github.com/go-zoox/ini)
 [![Coverage Status](https://coveralls.io/repos/github/go-zoox/ini/badge.svg?branch=master)](https://coveralls.io/github/go-zoox/ini?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/go-zoox/ini.svg)](https://github.com/go-zoox/ini/issues)
-[![Release](https://img.shields.io/github/ini/go-zoox/ini.svg?label=Release)](https://github.com/go-zoox/ini/inis)
+[![Release](https://img.shields.io/github/tag/go-zoox/ini.svg?label=Release)](https://github.com/go-zoox/ini/tags)
 
 ## Installation
 To install the package, run:
