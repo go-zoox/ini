@@ -96,10 +96,11 @@ func Marshal(v interface{}) ([]byte, error) {
 
 // Unmarshal parses the ini data and stores the result in the value pointed to by v.
 func Unmarshal(data []byte, v interface{}) error {
-	if ds, err := Parse(data); err != nil {
+	ds, err := Parse(data)
+	if err != nil {
 		return err
-	} else {
-		tg := tag.New("ini", datasource.NewMapDataSource(ds))
-		return tg.Decode(v)
 	}
+
+	tg := tag.New("ini", datasource.NewMapDataSource(ds))
+	return tg.Decode(v)
 }

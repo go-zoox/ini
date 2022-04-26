@@ -10,6 +10,7 @@ var (
 	sectionRe = regexp.MustCompile(`^\[(.+)\]$`)
 )
 
+// Parse parses the ini data and returns a map.
 func Parse(bytes []byte) (map[string]interface{}, error) {
 	container := make(map[string]interface{})
 
