@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	"github.com/go-zoox/tag"
+	"github.com/go-zoox/tag/datasource"
 )
 
 // Marshal returns the ini data of the given struct pointer.
@@ -95,11 +96,10 @@ func Marshal(v interface{}) ([]byte, error) {
 
 // Unmarshal parses the ini data and stores the result in the value pointed to by v.
 func Unmarshal(data []byte, v interface{}) error {
-	ds := newDataSource(data)
-	if err := ds.Parse(); err != nil {
+	if ds, err := Parse(data); err != nil {
 		return err
+	} else {
+		tg := tag.New("ini", datasource.NewMapDataSource(ds))
+		return tg.Decode(v)
 	}
-
-	tg := tag.New("ini", ds)
-	return tg.Decode(v)
 }

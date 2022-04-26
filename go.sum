@@ -1,4 +1,4 @@
-github.com/go-zoox/core-utils v1.0.1 h1:kErCUT+w5qZuaAAxP5HjLMS3lqJB+VGio8XCcXVOLFQ=
-github.com/go-zoox/core-utils v1.0.1/go.mod h1:EknM3KLL6/kagL95wZbWE7mRRcYCG/fHqiJ/EH0ihAs=
-github.com/go-zoox/tag v1.0.3 h1:S6+AXBKxP+ELzHvf6Mk3Q3tlhbwbYDMOpe3boC6Amo4=
-github.com/go-zoox/tag v1.0.3/go.mod h1:m0zKT1lvRK5v0st+oG6ttYrlCbCCLPKy7mcxIWfOB/0=
+github.com/go-zoox/core-utils v1.0.4 h1:hkED3IlciYfTYnk7LrO+lBGC/+I1KSjQpJL6+K1v7Rg=
+github.com/go-zoox/core-utils v1.0.4/go.mod h1:EknM3KLL6/kagL95wZbWE7mRRcYCG/fHqiJ/EH0ihAs=
+github.com/go-zoox/tag v1.0.6 h1:z/u9LiD5ibfX3iBlYZ+GhHFK2VouDKvk8tiJDH1poXM=
+github.com/go-zoox/tag v1.0.6/go.mod h1:jrbJgC1dZAN5+vZlmrUKu1/UpbOo0xVyCC1MfLpGGqk=
